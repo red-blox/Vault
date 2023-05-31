@@ -1,0 +1,4 @@
+sourcemap.json
+node_modules
+Packages
+docs/.vitepress/cache

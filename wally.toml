@@ -1,0 +1,9 @@
+[package]
+name = "uncon/vault"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Promise = "red-blox/promise@1.0.0-rc.3"
+Clock = "red-blox/clock@1.0.0-rc.2"
