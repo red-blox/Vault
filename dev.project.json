@@ -1,0 +1,9 @@
+{
+	"name": "VaultDev",
+	"tree": {
+		"$path": "Packages",
+		"Vault": {
+			"$path": "lib"
+		}
+	}
+}
