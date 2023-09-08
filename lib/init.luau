@@ -143,6 +143,7 @@ function Gem.Update<T, U...>(self: Gem<T>, Update: (T, U...) -> T, ...: U...)
 
 		if Success then
 			self.Cache = Result
+			self.ChangeSignal:Fire(Result :: any)
 		else
 			return
 		end
