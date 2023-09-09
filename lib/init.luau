@@ -62,6 +62,7 @@ export type Gem<T> = {
 
 	Observe: (self: Gem<T>, Callback: (T) -> ()) -> () -> (),
 	Update: <U...>(self: Gem<T>, Update: (T, U...) -> T, U...) -> (),
+	Close: (self: Gem<T>) -> Future<boolean>,
 	Save: (self: Gem<T>) -> Future<boolean>,
 	Get: (self: Gem<T>, SkipCache: boolean?) -> typeof(Future.Try(function()
 		return ({} :: any) :: T
